@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="temp <= 0.444\ngini = 0.615\nsamples = 511\nvalue = [117, 265, 129]"] ;
+1 [label="yr <= 0.5\ngini = 0.537\nsamples = 227\nvalue = [110, 108, 9]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="season <= 3.0\ngini = 0.397\nsamples = 117\nvalue = [85, 32, 0]"] ;
+1 -> 2 ;
+3 [label="gini = 0.093\nsamples = 82\nvalue = [78, 4, 0]"] ;
+2 -> 3 ;
+4 [label="gini = 0.32\nsamples = 35\nvalue = [7, 28, 0]"] ;
+2 -> 4 ;
+5 [label="atemp <= 0.267\ngini = 0.464\nsamples = 110\nvalue = [25, 76, 9]"] ;
+1 -> 5 ;
+6 [label="gini = 0.428\nsamples = 29\nvalue = [20, 9, 0]"] ;
+5 -> 6 ;
+7 [label="gini = 0.3\nsamples = 81\nvalue = [5, 67, 9]"] ;
+5 -> 7 ;
+8 [label="yr <= 0.5\ngini = 0.515\nsamples = 284\nvalue = [7, 157, 120]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="weathersit <= 2.5\ngini = 0.124\nsamples = 137\nvalue = [7, 128, 2]"] ;
+8 -> 9 ;
+10 [label="gini = 0.059\nsamples = 132\nvalue = [2, 128, 2]"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 5\nvalue = [5, 0, 0]"] ;
+9 -> 11 ;
+12 [label="hum <= 0.811\ngini = 0.317\nsamples = 147\nvalue = [0, 29, 118]"] ;
+8 -> 12 ;
+13 [label="gini = 0.268\nsamples = 138\nvalue = [0, 22, 116]"] ;
+12 -> 13 ;
+14 [label="gini = 0.346\nsamples = 9\nvalue = [0, 7, 2]"] ;
+12 -> 14 ;
+}
